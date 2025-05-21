@@ -9,7 +9,7 @@ def test_pybullet_body(helpers):
     with px.Client(mode=p.DIRECT):
         init_position = (0, 0, 1)
         init_orientation = (0, 0, 0, 1)
-        body = px.Body("kuka_iiwa/model.urdf", init_position, init_orientation)
+        body = px.Body("kuka_iiwa/model.urdf", init_position, init_orientation, flags=p.URDF_USE_INERTIA_FROM_FILE)
 
         assert body.num_joints == 7
 

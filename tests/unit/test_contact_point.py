@@ -5,7 +5,7 @@ import pybulletX as px  # noqa: F401
 
 def test_contact_points(helpers):
     with px.Client(mode=p.DIRECT) as c:
-        body = px.Body("teddy_vhacd.urdf")
+        body = px.Body("teddy_vhacd.urdf", flags=p.URDF_USE_INERTIA_FROM_FILE)
         body.set_base_pose([0.0, 0.0, -0.02])
         c.stepSimulation()
 

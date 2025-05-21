@@ -6,7 +6,7 @@ import pybulletX as px
 def test_free_joint_indices():
     free_joint_indices = [1, 2, 4, 5]
     with px.Client(mode=p.DIRECT):
-        robot = px.Robot("kuka_iiwa/model.urdf")
+        robot = px.Robot("kuka_iiwa/model.urdf", flags=p.URDF_USE_INERTIA_FROM_FILE)
         robot.free_joint_indices = free_joint_indices
 
         states = robot.get_states()

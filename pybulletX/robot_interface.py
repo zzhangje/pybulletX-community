@@ -2,8 +2,7 @@
 import io
 from abc import ABCMeta
 import collections
-
-from attrdict import AttrMap
+from box import Box as AttrMap
 
 from .helper import dump
 from .utils.space_dict import SpaceDict

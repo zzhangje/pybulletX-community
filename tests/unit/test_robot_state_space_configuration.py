@@ -12,7 +12,7 @@ def test_robot_state_space_configuration(
     joint_position, joint_velocity, joint_reaction_forces, applied_joint_motor_torque
 ):
     with px.Client(mode=p.DIRECT):
-        robot = px.Robot("kuka_iiwa/model.urdf")
+        robot = px.Robot("kuka_iiwa/model.urdf", flags=p.URDF_USE_INERTIA_FROM_FILE)
 
         robot.configure_state_space(
             joint_position,

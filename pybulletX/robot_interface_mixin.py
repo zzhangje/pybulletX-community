@@ -1,7 +1,7 @@
 # Copyright (c) Facebook, Inc. and its affiliates. All Rights Reserved
 import numpy as np
 from gym.spaces import Box
-from attrdict import AttrMap
+from box import Box as AttrMap
 import functools
 
 from .robot_interface import IRobot, router, SpaceDict

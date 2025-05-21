@@ -2,7 +2,7 @@
 import gym
 import collections
 
-from attrdict import AttrMap
+from box import Box as AttrMap
 
 
 def _override_gym_spaces_dict_constructor():
