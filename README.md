@@ -1,31 +1,27 @@
-# pybulletX
+# pybulletX Patch
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![GitHubCI](https://github.com/facebookresearch/pybulletX/workflows/CI/badge.svg)](https://github.com/facebookresearch/pybulletX/actions)
-[![CircleCI](https://circleci.com/gh/facebookresearch/pybulletX.svg?style=shield&circle-token=ad4f47a46ed4cc4ff976cdd2f79fcf7ef4494459)](https://circleci.com/gh/facebookresearch/pybulletX)
-[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
-[![Total alerts](https://img.shields.io/lgtm/alerts/g/facebookresearch/pybulletX.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/facebookresearch/pybulletX/alerts/)
-[![Language grade: Python](https://img.shields.io/lgtm/grade/python/g/facebookresearch/pybulletX.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/facebookresearch/pybulletX/context:python)
+![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/zhangzrjerry/pybulletxpatch/python-package.yml)
+[![Downloads](https://pepy.tech/badge/pybulletx)](https://pepy.tech/project/pybulletx)
 
-
-The lightweight pybullet wrapper for robotics researchers.
-Build robot simulation with less code.
-Scale your research with less boilerplate.
+A lightweight PyBullet wrapper for robotics researchers. Build robot simulations with less code and reduced boilerplate. Supports Python 3.8 through 3.12.
 
 ## Installation
 
-The preferred way of installation is through PyPi:
+The preferred way of installation is through pip:
+
 ```bash
-pip install pybulletX
+pip install pybulletX@git+https://github.com/ZhangzrJerry/PybulletxPatch.git
 ```
 
 Alternatively, you can clone the repository and install the package using:
+
 ```bash
-git clone https://github.com/facebookresearch/pybulletX.git 
+git clone https://github.com/ZhangzrJerry/PybulletxPatch.git
 cd pybulletX/ && pip install -e .
 ```
 
 ## Examples
+
 Here is an example of controlling Kuka arm with PyBulletX.
 
 ```python
@@ -59,6 +55,7 @@ if __name__ == "__main__":
 ```
 
 Here is the same example but without PyBulletX.
+
 ```python
 import time
 
@@ -112,4 +109,5 @@ if __name__ == "__main__":
 The examples above are available in `examples/with_pybulletX.py` and `examples/without_pybulletX.py`.
 
 ## License
+
 PyBulletX is licensed under [MIT License](LICENSE).
