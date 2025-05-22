@@ -6,6 +6,10 @@
 
 A lightweight PyBullet wrapper for robotics researchers. Build robot simulations with less code and reduced boilerplate. Supports Python 3.8 through 3.12.
 
+<p align=center>
+    <img src="./example.png" width=70%>
+</p>
+
 ## Installation
 
 The preferred way of installation is through pip:
