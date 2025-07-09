@@ -15,13 +15,13 @@ A lightweight PyBullet wrapper for robotics researchers. Build robot simulations
 The preferred way of installation is through pip:
 
 ```bash
-pip install pybulletX@git+https://github.com/ZhangzrJerry/PybulletxPatch.git
+pip install pybulletX@git+https://github.com/zzhangje/pybulletX-community.git
 ```
 
 Alternatively, you can clone the repository and install the package using:
 
 ```bash
-git clone https://github.com/ZhangzrJerry/PybulletxPatch.git
+git clone https://github.com/zzhangje/pybulletX-community.git
 cd pybulletX/ && pip install -e .
 ```
 
