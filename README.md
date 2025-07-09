@@ -1,4 +1,4 @@
-# pybulletX Patch
+# pybulletX Community
 
 ![Package Version](https://img.shields.io/badge/version-0.4.2-orange)
 ![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/zhangzrjerry/pybulletxpatch/python-package.yml)
